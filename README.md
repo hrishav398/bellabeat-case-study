@@ -36,8 +36,9 @@ The key business question is:
 * **Bellabeat Product & App Teams**, who can use insights to improve features, notifications, and user experience.
 
 ---
-![Average minutes by day of the week](Visuals/average_active_minutes_by_day_of_week.png)
 
+![Dataset](Visuals/Kaggle_source)
+Image from https://www.kaggle.com/datasets/arashnic/fitbit
 ## PREPARE
 
 ### **Data Source Description**
@@ -102,9 +103,9 @@ Despite these issues, the dataset is sufficient for **trend analysis and behavio
 
 ---
 
-
+![Average minutes by day of the week](Visuals/average_active_minutes_by_day_of_week.png)
 ## Process
-![Dataset](Visuals/Kaggle_source)
+
 ### Guiding Questions
 
 #### What tools are you choosing and why?
