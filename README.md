@@ -280,9 +280,7 @@ This data suggests that many users are likely not engaging in significant workou
     ![Total Steps](Visuals/total_step_day_of_the_week.png)  
    **What it shows**: Box plots illustrating the distribution of total daily steps for each day of the week.  
    **Key Insight**:  
-   The median steps (the line inside the box) are generally higher on Wednesday and Saturday, indicating these are days when users, on average, tend to take more steps.  
-   Tuesday appears to have the lowest median step count.  
-   The overall range of steps varies, with significant outliers (dots above the whiskers) showing some individuals achieving very high step counts on specific days.  
+   The median steps (the line inside the box) are generally higher on Wednesday and Saturday, indicating these are days when users, on average, tend to take more steps. Tuesday appears to have the lowest median step count. The overall range of steps varies, with significant outliers (dots above the whiskers) showing some individuals achieving very high step counts on specific days.  
    **Relevance for Bellabeat**: Similar to the "Average Very Active Minutes by Day of Week" chart, this provides a daily rhythm for user activity. Bellabeat can tailor communications:  
    <ins>Reinforce high-activity days</ins>: Provide positive reinforcement or challenges on Wednesdays and Saturdays.  
    <ins>Boost low-activity days</ins>: Offer motivation or easy-to-do activity suggestions on Tuesdays to help users increase their step count. This could be a good day for "walk breaks" or reminders to get steps in.  
