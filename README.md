@@ -204,13 +204,13 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
    **Key Insight**: Heart rate is generally lower during typical sleep hours (0-5 AM), gradually increases during the morning and afternoon, peaks around 5 PM (17:00), and then slowly declines through the evening. The peak around 5 PM suggests that many users are most active or engaged in activities that elevate their heart rate during this time.  
    **Relevance for Bellabeat**: This information can be used for targeted notifications. For example, promoting evening workouts or winding-down routines could be effective. It also provides insights into typical user rhythms, which can inform feature development related to activity tracking and recovery.    
 
-3. **Manual vs Automatic Weight Reports**  
+2. **Manual vs Automatic Weight Reports**  
    ![Calorie per Minute](Visuals/manual_vs_automatic_weight_reports.png)  
    **What it shows**: A pie chart illustrating the proportion of weight reports that are manual versus automatic.  
    **Key Insight**: A significant majority (69.7%) of weight reports are entered manually, while only 30.3% are automatic.  
    **Relevance for Bellabeat**: This indicates that many users are not fully utilizing or do not have access to automatic weight tracking features (e.g., smart scales integrated with the app). Bellabeat could explore strategies to increase adoption of automatic tracking (e.g., promoting smart scale integration, simplifying the setup process, or highlighting the benefits of automatic logging for long-term trends). This could also inform whether development efforts should prioritize manual input improvements or automatic integration.  
    
-5. **Correlation Heatmap – Daily Activity**  
+3. **Correlation Heatmap – Daily Activity**  
   ![Calorie per Minute](Visuals/correlation_heatmap.png)  
    **What it shows**: A heatmap displaying the correlation coefficients between various daily activity metrics (e.g., TotalSteps, TotalDistance, Calories, different types of activity minutes). Values closer to 1 (red) indicate a strong positive correlation, values closer to -1 (blue) indicate a strong negative correlation, and values near 0 (white/gray) indicate a weak or no correlation.  
 
@@ -224,35 +224,37 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
    Id (user ID) shows very weak correlations with most metrics, which is good as it indicates user variability rather than a strong bias from specific IDs.  
    **Relevance for Bellabeat**: This chart provides valuable data for understanding how different activity metrics relate to calorie burn. Bellabeat can use this to emphasize the importance of       VeryActiveMinutes for calorie expenditure and overall fitness goals. It can also help in designing activity recommendations and setting realistic goals for users, focusing on metrics that genuinely contribute to health outcomes like calorie burn.
 
-3. **Calories Over Time**  
+4. **Calories Over Time**  
   ![Calorie per Minute](Visuals/calories_over_time.png)  
-   Caloric expenditure increases during the day and drops off late at night, aligning with typical waking and sleeping patterns.  
+   **What it shows**: A line graph displaying the total calories burned over approximately a month (mid-March to mid-April 2016).  
+   **Key Insight**: The graph shows a general declining trend in total calories burned towards the end of the observed period. There are daily fluctuations, often showing a cyclical pattern (likely related to weekdays vs. weekends). The drop towards mid-April is quite significant.  
+   **Relevance for Bellabeat**: The declining trend is concerning. It suggests a potential decrease in user engagement or activity levels over time. Bellabeat needs to investigate why this decline is happening (e.g., lack of motivation, app fatigue, external factors) and implement strategies to re-engage users, such as personalized challenges, new features, or motivational reminders, especially as time progresses.  
 
-4. **Heart Rate Boxplot – Day of Week**  
+5. **Heart Rate Boxplot – Day of Week**  
    ![Calorie per Minute](Visuals/heart_rate_box_wisker.png)  
    Highest heart rates were recorded on **Tuesdays and Fridays**, suggesting more intense activity or stress on these days.  
 
-5. **Heart Rate Distribution**  
+6. **Heart Rate Distribution**  
    ![Calorie per Minute](Visuals/heart_rate.png)  
    Most heart rate values clustered between **60 and 110 BPM**, with a median around **75 BPM**, indicating the resting or mildly active state of most users.  
 
-6. **Calories Burned by Hour**  
+7. **Calories Burned by Hour**  
    ![Calorie per Minute](Visuals/calories_burned_hour.png)  
    Users burned the most calories between **6–8 AM** and **5–7 PM**, consistent with common exercise windows.  
 
-7. **Average Active Minutes by Day of Week**  
+8. **Average Active Minutes by Day of Week**  
    ![Average minutes by day of the week](Visuals/average_active_minutes_by_day_of_week.png)  
    Activity levels peaked on **Tuesdays, Thursdays, and Saturdays**, suggesting preferred workout days.  
 
-8. **Calories Burned Over Time with Confidence Interval**  
+9. **Calories Burned Over Time with Confidence Interval**  
     ![Calorie per Minute](Visuals/calories_per_time.png)  
     There is an **overall increase in calories burned over time**, though variability grows later in the week, showing inconsistent effort.  
 
-9. **Distribution of Total Steps**  
+10. **Distribution of Total Steps**  
     ![Calorie per Minute](Visuals/total_steps.png)  
     Most users logged **fewer than 10,000 steps per session**, suggesting room for improvement in daily movement.  
 
-10. **Proportion of Activity Minutes**  
+11. **Proportion of Activity Minutes**  
   ![Calorie per Minute](Visuals/total_minutes_by_activity_type.png)  
 * **Sedentary**: \~70%  
 * **Lightly Active**: \~20%  
@@ -260,11 +262,11 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
 * **Very Active**: \~3%  
   Users spend the majority of their time being sedentary.  
 
-11. **Total Steps by Day of Week**  
+12. **Total Steps by Day of Week**  
     ![Total Steps](Visuals/total_step_day_of_the_week.png)  
     Highest step counts were recorded on **Wednesdays and Saturdays**, indicating midweek and weekend activity boosts.  
 
-12. **Steps vs Calories**  
+13. **Steps vs Calories**  
     ![Calorie per Minute](Visuals/steps_vs_calories.png)  
     A strong linear relationship was observed: **more steps directly translated to more calories burned**.  
 
