@@ -206,9 +206,11 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
 
 3. **Manual vs Automatic Weight Reports**  
    ![Calorie per Minute](Visuals/manual_vs_automatic_weight_reports.png)  
-   **Only 1 out of 8 users** manually logged their weight. Most relied on automatic syncing, suggesting a preference for passive tracking.  
-
-4. **Correlation Heatmap – Daily Activity**  
+   **What it shows**: A pie chart illustrating the proportion of weight reports that are manual versus automatic.  
+   **Key Insight**: A significant majority (69.7%) of weight reports are entered manually, while only 30.3% are automatic.  
+   **Relevance for Bellabeat**: This indicates that many users are not fully utilizing or do not have access to automatic weight tracking features (e.g., smart scales integrated with the app). Bellabeat could explore strategies to increase adoption of automatic tracking (e.g., promoting smart scale integration, simplifying the setup process, or highlighting the benefits of automatic logging for long-term trends). This could also inform whether development efforts should prioritize manual input improvements or automatic integration.  
+   
+5. **Correlation Heatmap – Daily Activity**  
   ![Calorie per Minute](Visuals/correlation_heatmap.png)  
    Strong positive correlations were found between:  
 
