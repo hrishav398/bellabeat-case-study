@@ -101,12 +101,10 @@ Despite these issues, the dataset is sufficient for **trend analysis and behavio
 * Overall, the data is structured and clean enough to generate meaningful insights related to user activity, sleep, and calorie trends.
 
 ---
-Here’s a complete, concise, and case-study-ready write-up for the **Process** phase of your Bellabeat Capstone project, based on the 11 datasets you're using:
 
----
-![Total Steps](Visuals/total_steps.png)
+
 ## Process
-
+![Dataset](Visuals/Kaggle_source)
 ### Guiding Questions
 
 #### What tools are you choosing and why?
@@ -195,9 +193,8 @@ Yes. All cleaning and transformation steps were documented within the Google Col
 ---
 
 
-
-
 ## Analyze
+![Total Steps](Visuals/total_steps.png)
 
 #### **Summary of Your Analysis**
 
