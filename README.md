@@ -49,18 +49,13 @@ For this case study, I used public Fitbit fitness tracker data made available th
 
 ### **Data Storage**
 
-The data was downloaded as 18 individual CSV files and stored in Google Colab for cleaning, exploration, and analysis. These files were then loaded into Pandas dataframes for manipulation and visualization.
+The data was downloaded as 18 individual CSV files. 11 files were stored in Google Drive and loaded in Google Colab for cleaning, exploration, and analysis. These files were then loaded into Pandas dataframes for manipulation and visualization.
 
 ---
 
 ### **Data Organization**
 
-The data includes both **long and wide formats**, depending on the file:
-
-* **Wide format** examples: `dailyActivity_merged`, `sleepDay_merged`
-* **Long format** examples: `minuteStepsNarrow_merged`, `minuteCaloriesNarrow_merged`
-
-Each file represents different dimensions of user activity such as steps, sleep, calories burned, and heart rate, and is organized either by **day**, **hour**, or **minute** depending on the granularity.
+Each file represents different dimensions of user activity, such as steps, sleep, calories burned, and heart rate, and is organized either by **day**, **hour**, or **minute** depending on the granularity.
 
 ---
 
