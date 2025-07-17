@@ -1,6 +1,6 @@
 # bellabeat-case-study
 ![Bellabeat Website](Visuals/website.png)
-Data analysis case study for Bellabeat wellness technology company - Google Analytics Certificate capstone project 
+Data analysis case study for Bellabeat wellness company - Google Analytics Certificate capstone project   
 (image from https://bellabeat.com/)
 
 
