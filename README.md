@@ -212,11 +212,17 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
    
 5. **Correlation Heatmap – Daily Activity**  
   ![Calorie per Minute](Visuals/correlation_heatmap.png)  
-   Strong positive correlations were found between:  
+   **What it shows**: A heatmap displaying the correlation coefficients between various daily activity metrics (e.g., TotalSteps, TotalDistance, Calories, different types of activity minutes). Values closer to 1 (red) indicate a strong positive correlation, values closer to -1 (blue) indicate a strong negative correlation, and values near 0 (white/gray) indicate a weak or no correlation.  
 
-   * **Total Steps and Calories (0.95)**  
-   * **Very Active Minutes and Total Steps (0.87)**  
-     These indicate that more active minutes are closely tied to total energy expenditure.  
+**Key Insight**:  
+Strong Positive Correlations:  
+TotalSteps, TotalDistance, TrackerDistance, LoggedActivitiesDistance are all highly correlated with each other, as expected.  
+VeryActiveMinutes shows a strong positive correlation with Calories, TotalSteps, and TotalDistance. This is a crucial finding: more intense activity directly leads to higher calorie burn.  
+LightlyActiveMinutes has a moderate positive correlation with Calories.  
+Weak/Negative Correlations:  
+SedentaryMinutes generally has weak or slightly negative correlations with active metrics and Calories, which is also expected (more sedentary time means less activity and calorie burn).  
+Id (user ID) shows very weak correlations with most metrics, which is good as it indicates user variability rather than a strong bias from specific IDs.  
+**Relevance for Bellabeat**: This chart provides valuable data for understanding how different activity metrics relate to calorie burn. Bellabeat can use this to emphasize the importance of VeryActiveMinutes for calorie expenditure and overall fitness goals. It can also help in designing activity recommendations and setting realistic goals for users, focusing on metrics that genuinely contribute to health outcomes like calorie burn.
 
 3. **Calories Over Time**  
   ![Calorie per Minute](Visuals/calories_over_time.png)  
