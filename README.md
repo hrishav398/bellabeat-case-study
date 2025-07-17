@@ -199,45 +199,55 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
 ### Visual Data Analysis and Key Findings
 
 1. **Calories Per Minute (minute\_calories\_narrow\.csv)**
+   ![Calorie per Minute](Visuals/average_active_minutes_by_day_of_week.png)
    Users burned between **1.06 and 14.56 calories per minute**, with most values between **2–5 calories**. This suggests moderate-intensity activities were most common.
 
-2. **Heart Rate by Hour (heartrate\_seconds.csv)**
+3. **Heart Rate by Hour (heartrate\_seconds.csv)**
+   ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
    Heart rate was generally higher in the **morning and evening**, peaking around **7–9 AM** and **5–7 PM**, indicating activity spikes during commute and workout times.
 
-3. **Manual vs Automatic Weight Reports (weight\_log\_info.csv)**
+5. **Manual vs Automatic Weight Reports (weight\_log\_info.csv)**
+   ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
    **Only 1 out of 8 users** manually logged their weight. Most relied on automatic syncing, suggesting a preference for passive tracking.
 
-4. **Correlation Heatmap – Daily Activity (daily\_activity.csv)**
+7. **Correlation Heatmap – Daily Activity (daily\_activity.csv)**
+  ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
    Strong positive correlations were found between:
 
    * **Total Steps and Calories (0.95)**
    * **Very Active Minutes and Total Steps (0.87)**
      These indicate that more active minutes are closely tied to total energy expenditure.
 
-5. **Calories Over Time (hourly\_calories.csv)**
+9. **Calories Over Time (hourly\_calories.csv)**
+  ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
    Caloric expenditure increases during the day and drops off late at night, aligning with typical waking and sleeping patterns.
 
-6. **Heart Rate Boxplot – Day of Week (heartrate\_seconds.csv)**
+11. **Heart Rate Boxplot – Day of Week (heartrate\_seconds.csv)**
+   ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
    Highest heart rates were recorded on **Tuesdays and Fridays**, suggesting more intense activity or stress on these days.
 
-7. **Heart Rate Distribution (heartrate\_seconds.csv)**
+13. **Heart Rate Distribution (heartrate\_seconds.csv)**
+   ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
    Most heart rate values clustered between **60 and 110 BPM**, with a median around **75 BPM**, indicating the resting or mildly active state of most users.
 
-8. **Calories Burned by Hour (hourly\_calories.csv)**
+15. **Calories Burned by Hour (hourly\_calories.csv)**
+   ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
    Users burned the most calories between **6–8 AM** and **5–7 PM**, consistent with common exercise windows.
 
-9. **Very Active Minutes by Day of Week (minute\_intensities\_narrow\.csv)**
+17. **Very Active Minutes by Day of Week (minute\_intensities\_narrow\.csv)**
    ![Average minutes by day of the week](Visuals/average_active_minutes_by_day_of_week.png)
    Activity levels peaked on **Tuesdays, Thursdays, and Saturdays**, suggesting preferred workout days.
 
-11. **Calories Burned Over Time with Confidence Interval (hourly\_calories.csv)**
+18. **Calories Burned Over Time with Confidence Interval (hourly\_calories.csv)**
+    ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
     There is an **overall increase in calories burned over time**, though variability grows later in the week, showing inconsistent effort.
 
-12. **Distribution of Total Steps (minute\_steps\_narrow\.csv)**
+20. **Distribution of Total Steps (minute\_steps\_narrow\.csv)**
+    ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
     Most users logged **fewer than 10,000 steps per session**, suggesting room for improvement in daily movement.
 
-13. **Proportion of Activity Minutes (Pie Chart – minute\_intensities\_narrow\.csv)**
-
+22. **Proportion of Activity Minutes (Pie Chart – minute\_intensities\_narrow\.csv)**
+  ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
 * **Sedentary**: \~70%
 * **Lightly Active**: \~20%
 * **Moderately Active**: \~7%
@@ -249,9 +259,11 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
     Highest step counts were recorded on **Wednesdays and Saturdays**, indicating midweek and weekend activity boosts.
 
 15. **Steps vs Calories (daily\_activity.csv)**
+    ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
     A strong linear relationship was observed: **more steps directly translated to more calories burned**.
 
-16. **Weight Entry Method (Pie Chart – weight\_log\_info.csv)**
+17. **Weight Entry Method (Pie Chart – weight\_log\_info.csv)**
+    ![Calorie per Minute](Visuals/heart_rate_per_hour.png)
     \~87.5% of entries were **automatically recorded**, reinforcing that users prefer devices that passively track data with minimal effort.
 
 ---
