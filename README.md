@@ -232,43 +232,67 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
 
 5. **Heart Rate Boxplot – Day of Week**  
    ![Calorie per Minute](Visuals/heart_rate_box_wisker.png)  
-   Highest heart rates were recorded on **Tuesdays and Fridays**, suggesting more intense activity or stress on these days.  
-
+   **What it shows**: Box plots illustrating the distribution of heart rate values for each day of the week. The box represents the interquartile range (IQR), the line inside is the median, and the "whiskers" extend to typically 1.5 times the IQR, with points beyond being outliers.
+   **Key Insight**: The median heart rate (the line in the middle of the box) and the overall distribution appear relatively consistent across all days of the week, hovering around 75-80 bpm. There are numerous outliers, particularly on the higher end, indicating periods of elevated heart rate (likely during exercise) that occur on all days.
+   **Relevance for Bellabeat**: This suggests that heart rate patterns are broadly similar throughout the week, implying consistent activity or basal metabolic rates. Bellabeat could leverage this consistency for general heart rate monitoring features or to flag unusual deviations that might indicate health issues or unusually strenuous activity on any given day.
 6. **Heart Rate Distribution**  
    ![Calorie per Minute](Visuals/heart_rate.png)  
-   Most heart rate values clustered between **60 and 110 BPM**, with a median around **75 BPM**, indicating the resting or mildly active state of most users.  
-
+  **What it shows**: A histogram with a KDE, showing the frequency distribution of all recorded heart rate values.
+   **Key Insight**: The distribution of heart rate values is unimodal and approximately bell-shaped, with a peak frequency between 60-70 bpm. This range represents a healthy resting or light activity heart rate for most people. There's a tail extending to higher heart rates (up to 180 bpm), indicating periods of intense activity, but these are less frequent.
+   **Relevance for Bellabeat**: This provides a baseline understanding of user heart rate patterns. The peak around 60-70 bpm is normal. Bellabeat can use this to establish typical heart rate zones for different activities, offer personalized insights based on an individual's normal range, or alert users to unusually high or low heart rates that might warrant attention.
 7. **Calories Burned by Hour**  
    ![Calorie per Minute](Visuals/calories_burned_hour.png)  
-   Users burned the most calories between **6–8 AM** and **5–7 PM**, consistent with common exercise windows.  
+   **What it shows**: A bar chart displaying the average calories burned for each hour of the day (0-23).
+   **Key Insight**: Average calorie burn is lowest in the early morning hours (0-4 AM), gradually increases through the morning and afternoon, and peaks significantly in the late afternoon/early evening (around 5 PM to 7 PM). There's a slight drop-off after 7 PM.
+   **Relevance for Bellabeat**: This reinforces the finding from the heart rate per hour chart. The peak calorie burn in the late afternoon/early evening suggests this is prime time for physical activity among users. Bellabeat can target marketing messages, workout prompts, or activity challenges during these hours to align with existing user behavior and maximize engagement. It also indicates opportunities to encourage activity during the lower-calorie-burn periods.
 
 8. **Average Active Minutes by Day of Week**  
    ![Average minutes by day of the week](Visuals/average_active_minutes_by_day_of_week.png)  
-   Activity levels peaked on **Tuesdays, Thursdays, and Saturdays**, suggesting preferred workout days.  
+   **What it shows**: A bar chart comparing the average "Very Active Minutes" for each day of the week.
+   **Key Insight**: Users tend to have more "Very Active Minutes" on Monday and Saturday, with Friday also showing relatively high activity. Tuesday and Sunday show slightly lower average very active minutes.
+   **Relevance for Bellabeat**: This insight can be used for strategic campaign planning. Bellabeat could:
+      <ins>Capitalize on peaks</ins>: Encourage users on Mondays and Saturdays with more intense workout suggestions or challenges.
+      <ins>Boost dips</ins>: Develop strategies to motivate users on Tuesdays and Sundays, perhaps with lighter, recovery-focused activities or different types of challenges to prevent a drop-off in activity. This could involve reminding users of their goals or offering gentle prompts.
 
 9. **Calories Burned Over Time with Confidence Interval**  
     ![Calorie per Minute](Visuals/calories_per_time.png)  
-    There is an **overall increase in calories burned over time**, though variability grows later in the week, showing inconsistent effort.  
+    **What it shows**: A line graph showing the average calories burned over time, similar to "Total Calories Burned Over Time," but with a shaded area representing a confidence interval (indicating the variability or uncertainty around the average).
+   **Key Insight**: This chart confirms the declining trend in average daily calorie burn from mid-March to mid-April, as seen in calories over time.png. The shaded area indicates that while there's variability, the downward trend is consistent across the data. The sharp drop at the very end of the period is prominent.
+   **Relevance for Bellabeat**: The persistent decline in calorie burn, despite daily fluctuations, is a critical finding. It suggests a need for long-term engagement strategies. Bellabeat should prioritize features that maintain user motivation over extended periods, such as personalized insights, progress tracking, community features, or adaptive goal setting. This decline could also signal the need to analyze user churn or disengagement patterns.
 
 10. **Distribution of Total Steps**  
     ![Calorie per Minute](Visuals/total_steps.png)  
-    Most users logged **fewer than 10,000 steps per session**, suggesting room for improvement in daily movement.  
+    **What it shows**: This is a histogram with a Kernel Density Estimate (KDE) curve, illustrating the frequency distribution of daily total steps taken by users.
+   **Key Insight**: The distribution is heavily skewed to the right, indicating that a large number of users take relatively few steps per day (peaking below 2,500 steps). While there's a long tail extending to higher step counts (up to 28,000+), these higher activity levels are much less frequent. This suggests a significant portion of the user base might not be meeting common daily step recommendations (e.g., 10,000 steps).
+**Relevance for Bellabeat**: This highlights a major opportunity for Bellabeat to encourage increased daily activity. Marketing could focus on achievable step goals, perhaps starting with smaller increments (e.g., "Add 1,000 steps today!") before aiming for higher numbers. The app could implement features like step challenges, goal reminders, or visual progress trackers to motivate users to move more consistently.
 
 11. **Proportion of Activity Minutes**  
   ![Calorie per Minute](Visuals/total_minutes_by_activity_type.png)  
-* **Sedentary**: \~70%  
-* **Lightly Active**: \~20%  
-* **Moderately Active**: \~7%  
-* **Very Active**: \~3%  
-  Users spend the majority of their time being sedentary.  
+   **What it shows**: A pie chart displaying the percentage breakdown of total minutes spent in different activity categories: Sedentary, Lightly Active, Fairly Active, and Very Active.
+   **Key Insight**: This is a critical finding. An overwhelming majority (83.3%) of recorded minutes are categorized as "Sedentary Minutes." "Lightly Active Minutes" account for 14.2%, while "Fairly Active Minutes" (1.1%) and "Very Active Minutes" (1.4%) make up a very small proportion of users' total time.
+   **Relevance for Bellabeat**: This is perhaps the most important insight for Bellabeat. It reveals a highly sedentary user base. This presents both a challenge and a massive opportunity. Bellabeat should prioritize features and marketing messages that address sedentary behavior, such as:
+   <ins>Sedentary reminders</ins>: Gentle nudges to stand up and move after prolonged periods of inactivity.
+   <ins>Micro-breaks</ins>: Encouraging short walks or stretches throughout the day.
+   <ins>Education</ins>: Highlighting the health risks of prolonged sitting and the benefits of even light activity.
+   <ins>Gamification</ins>: Implementing challenges or rewards for reducing sedentary time.
+This data suggests that many users are likely not engaging in significant workout routines, but rather need encouragement for basic daily movement.
 
 12. **Total Steps by Day of Week**  
     ![Total Steps](Visuals/total_step_day_of_the_week.png)  
-    Highest step counts were recorded on **Wednesdays and Saturdays**, indicating midweek and weekend activity boosts.  
+   **What it shows**: Box plots illustrating the distribution of total daily steps for each day of the week.
+   **Key Insight**:
+   The median steps (the line inside the box) are generally higher on Wednesday and Saturday, indicating these are days when users, on average, tend to take more steps.
+   Tuesday appears to have the lowest median step count.
+   The overall range of steps varies, with significant outliers (dots above the whiskers) showing some individuals achieving very high step counts on specific days.
+   **Relevance for Bellabeat**: Similar to the "Average Very Active Minutes by Day of Week" chart, this provides a daily rhythm for user activity. Bellabeat can tailor communications:
+   <ins>Reinforce high-activity days</ins>: Provide positive reinforcement or challenges on Wednesdays and Saturdays.
+   <ins>Boost low-activity days</ins>: Offer motivation or easy-to-do activity suggestions on Tuesdays to help users increase their step count. This could be a good day for "walk breaks" or reminders to get steps in.
 
 13. **Steps vs Calories**  
     ![Calorie per Minute](Visuals/steps_vs_calories.png)  
-    A strong linear relationship was observed: **more steps directly translated to more calories burned**.  
+   **What it shows**: A scatter plot displaying the relationship between Total Steps taken and Calories Burned. Each point represents a single day's data for a user.
+   **Key Insight**: There is a clear positive correlation between total steps and calories burned. As the number of steps increases, the total calories burned generally also increases. The relationship is somewhat linear but also shows variability, meaning that for the same number of steps, different amounts of calories can be burned (this could be due to intensity, individual metabolic rates, or other factors not captured).
+   **Relevance for Bellabeat**: This confirms that walking and stepping are effective ways to burn calories. Bellabeat can leverage this direct relationship in its messaging and goal setting. For instance, explaining that "X extra steps can lead to Y more calories burned" can be a powerful motivator. It also suggests that encouraging any form of step-based activity is beneficial for users aiming for weight management or increased energy expenditure.  
 
 ---
 
