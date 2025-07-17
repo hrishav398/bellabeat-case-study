@@ -104,7 +104,7 @@ Despite these issues, the dataset is sufficient for **trend analysis and behavio
 Here’s a complete, concise, and case-study-ready write-up for the **Process** phase of your Bellabeat Capstone project, based on the 11 datasets you're using:
 
 ---
-
+![Total Steps](Visuals/total_steps.png)
 ## Process
 
 ### Guiding Questions
