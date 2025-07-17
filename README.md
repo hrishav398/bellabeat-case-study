@@ -189,9 +189,6 @@ Yes. All cleaning and transformation steps were documented within the Google Col
 ---
 
 ![Total Steps](Visuals/total_steps.png)
-Here's your **updated summary** for the **"Analyze"** section of the Bellabeat Capstone case study, incorporating the **new visualizations** you created:
-
----
 
 ## Analyze
 
