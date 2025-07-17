@@ -189,76 +189,86 @@ Yes. All cleaning and transformation steps were documented within the Google Col
 ---
 
 ![Total Steps](Visuals/total_steps.png)
+Here's your **updated summary** for the **"Analyze"** section of the Bellabeat Capstone case study, incorporating the **new visualizations** you created:
+
+---
+
 ## Analyze
 
-#### **Summary of Your Analysis**
+### Summary of Analysis
 
-The analysis of the Bellabeat smart device data revealed several key patterns in users’ behavior, especially around physical activity, calories burned, sleep, and weight tracking. The following is a summary of key insights derived from the eleven datasets used:
-
----
-
-#### **Physical Activity Trends (daily\_activity, hourly\_steps, minute\_steps\_narrow):**
-
-* **Most users are relatively inactive.** The majority of users had low average daily step counts, suggesting they do not consistently reach the 10,000-step benchmark.
-* **Step activity is clustered around certain times of day.** Peak activity often occurred during morning and early evening hours, likely corresponding to commutes or workouts.
-* **Minute-level step data** showed that users were sedentary for large parts of the day, with short bursts of walking or running.
+Using Fitbit user data, we analyzed trends in daily activity, heart rate, calories, sleep, steps, and weight metrics to uncover insights that could inform Bellabeat’s strategy. The data was aggregated, cleaned, and explored through multiple visualizations. Below are the key findings:
 
 ---
 
-#### **Calories and METs (daily\_activity, hourly\_calories, minute\_calories\_narrow, minute\_METs\_narrow):**
+### Visual Data Analysis and Key Findings
 
-* **Calories burned correlates with step count** – more active users tend to burn more calories.
-* **MET (Metabolic Equivalent of Task)** levels are mostly low, suggesting light physical activities dominate.
-* Users rarely reach higher MET levels, meaning intense activity is rare.
+1. **Calories Per Minute (minute\_calories\_narrow\.csv)**
+   Users burned between **1.06 and 14.56 calories per minute**, with most values between **2–5 calories**. This suggests moderate-intensity activities were most common.
+
+2. **Heart Rate by Hour (heartrate\_seconds.csv)**
+   Heart rate was generally higher in the **morning and evening**, peaking around **7–9 AM** and **5–7 PM**, indicating activity spikes during commute and workout times.
+
+3. **Manual vs Automatic Weight Reports (weight\_log\_info.csv)**
+   **Only 1 out of 8 users** manually logged their weight. Most relied on automatic syncing, suggesting a preference for passive tracking.
+
+4. **Correlation Heatmap – Daily Activity (daily\_activity.csv)**
+   Strong positive correlations were found between:
+
+   * **Total Steps and Calories (0.95)**
+   * **Very Active Minutes and Total Steps (0.87)**
+     These indicate that more active minutes are closely tied to total energy expenditure.
+
+5. **Calories Over Time (hourly\_calories.csv)**
+   Caloric expenditure increases during the day and drops off late at night, aligning with typical waking and sleeping patterns.
+
+6. **Heart Rate Boxplot – Day of Week (heartrate\_seconds.csv)**
+   Highest heart rates were recorded on **Tuesdays and Fridays**, suggesting more intense activity or stress on these days.
+
+7. **Heart Rate Distribution (heartrate\_seconds.csv)**
+   Most heart rate values clustered between **60 and 110 BPM**, with a median around **75 BPM**, indicating the resting or mildly active state of most users.
+
+8. **Calories Burned by Hour (hourly\_calories.csv)**
+   Users burned the most calories between **6–8 AM** and **5–7 PM**, consistent with common exercise windows.
+
+9. **Very Active Minutes by Day of Week (minute\_intensities\_narrow\.csv)**
+   Activity levels peaked on **Tuesdays, Thursdays, and Saturdays**, suggesting preferred workout days.
+
+10. **Calories Burned Over Time with Confidence Interval (hourly\_calories.csv)**
+    There is an **overall increase in calories burned over time**, though variability grows later in the week, showing inconsistent effort.
+
+11. **Distribution of Total Steps (minute\_steps\_narrow\.csv)**
+    Most users logged **fewer than 10,000 steps per session**, suggesting room for improvement in daily movement.
+
+12. **Proportion of Activity Minutes (Pie Chart – minute\_intensities\_narrow\.csv)**
+
+* **Sedentary**: \~70%
+* **Lightly Active**: \~20%
+* **Moderately Active**: \~7%
+* **Very Active**: \~3%
+  Users spend the majority of their time being sedentary.
+
+13. **Total Steps by Day of Week (minute\_steps\_narrow\.csv)**
+    Highest step counts were recorded on **Wednesdays and Saturdays**, indicating midweek and weekend activity boosts.
+
+14. **Steps vs Calories (daily\_activity.csv)**
+    A strong linear relationship was observed: **more steps directly translated to more calories burned**.
+
+15. **Weight Entry Method (Pie Chart – weight\_log\_info.csv)**
+    \~87.5% of entries were **automatically recorded**, reinforcing that users prefer devices that passively track data with minimal effort.
 
 ---
 
-#### **Sleep Behavior (minute\_sleep):**
+### Insights for Bellabeat
 
-* Many users track sleep inconsistently (not all users have sleep data).
-* Users who do track sleep often average **6–7 hours**, which is slightly below the recommended 7–9 hours for adults.
-* **Interruptions in sleep** (e.g., frequent waking minutes) were found in several user profiles, indicating possible sleep quality issues.
-
----
-
-#### **Heart Rate Insights (heartrate\_seconds):**
-
-* Most users fall within a **resting heart rate range of 60–80 bpm**, which is healthy.
-* Heart rate variability throughout the day aligns with expected patterns: lower during sleep, higher during activity.
-* Data is extremely granular (per second), so summary statistics like min, max, average heart rate per day were used.
+* **Activity engagement is low** overall, with most time spent in sedentary or light activity zones.
+* **Caloric and step data show strong patterns**, making them reliable targets for goal-setting features.
+* Users prefer **automated tracking**; Bellabeat devices should emphasize seamless syncing.
+* **Engagement peaks on certain days and times**, suggesting that Bellabeat can tailor notifications or challenges for **Tuesdays, Thursdays, and Saturdays** during **morning/evening hours**.
+* Customizable reminders and health nudges can help increase consistency.
 
 ---
 
-#### **Weight Tracking (weight\_log\_info):**
-
-* Weight tracking is infrequent and only a small subset of users log weight regularly.
-* Among those who do, most users have **BMI values in the overweight category** (BMI 25–30), with very few in the obese or underweight range.
-* Many users who logged weight also recorded body fat %, allowing for more nuanced health insights.
-
----
-
-#### **Minute-Level Intensity (minute\_intensities\_narrow):**
-
-* Data confirms that **sedentary minutes dominate**, followed by light activity.
-* **Very few entries show moderate or very active minutes**, reinforcing the idea of low physical engagement.
-
----
-
-#### **Key Trends and Relationships Identified:**
-
-* **More active users** tend to:
-
-  * Burn more calories,
-  * Track sleep more consistently,
-  * Have more favorable weight/BMI profiles.
-* **Inactive or inconsistent users** provide gaps in data, particularly in weight and sleep tracking.
-* **Device usage patterns** suggest users are more likely to track steps than sleep or weight.
-
----
-
-These findings help answer the business questions by shedding light on current **user behaviors**, **engagement levels**, and **health patterns**. This information will directly influence marketing strategies and feature development for Bellabeat's products and services.
-
----
 
 
 
