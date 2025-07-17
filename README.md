@@ -206,7 +206,7 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
    ![Calorie per Minute](Visuals/manual_vs_automatic_weight_reports.png)  
    **Only 1 out of 8 users** manually logged their weight. Most relied on automatic syncing, suggesting a preference for passive tracking.  
 
-3. **Correlation Heatmap – Daily Activity **  
+3. **Correlation Heatmap – Daily Activity**  
   ![Calorie per Minute](Visuals/correlation_heatmap.png)  
    Strong positive correlations were found between:  
 
