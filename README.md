@@ -303,7 +303,19 @@ This data suggests that many users are likely not engaging in significant workou
 
 ---
 
+### SHARE
+- Built a clean, modular Python notebook with commentary and visualizations
+- Published findings and charts to GitHub
 
+---
+
+## Tools Used
+
+- Python (pandas, matplotlib, seaborn)
+- Google Colab
+- GitHub
+
+---
 
 
 
