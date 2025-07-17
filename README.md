@@ -97,6 +97,99 @@ Despite these issues, the dataset is sufficient for **trend analysis and behavio
 * Overall, the data is structured and clean enough to generate meaningful insights related to user activity, sleep, and calorie trends.
 
 ---
+Here’s a complete, concise, and case-study-ready write-up for the **Process** phase of your Bellabeat Capstone project, based on the 11 datasets you're using:
+
+---
+
+## Process
+
+### Guiding Questions
+
+#### What tools are you choosing and why?
+
+I used **Google Colab** as my main analysis environment because it is cloud-based, allows Python coding with built-in support for libraries like **Pandas**, **Matplotlib**, **Seaborn**, and **Plotly**, and it integrates well with Google Drive. These tools are well-suited for handling large CSV files, performing data wrangling, and visualizing trends interactively.
+
+---
+
+#### Have you ensured your data’s integrity?
+
+Yes. I ensured data integrity by:
+
+* Verifying the data structure using `.info()` and `.head()` commands.
+* Checking for missing values using `.isnull().sum()`.
+* Confirming consistency of timestamps and data types across datasets.
+* Removing duplicate entries where necessary.
+
+---
+
+#### What steps have you taken to ensure your data is clean?
+
+For each of the 11 datasets, the following cleaning steps were taken:
+
+* Removed unnecessary columns like unnamed indices.
+* Converted all time-related columns to consistent `datetime` format.
+* Checked for and removed duplicate rows.
+* Verified data types and corrected them where necessary (e.g., converting dates, integers, and floats).
+* Identified missing values, especially in `weight_log_info.csv` (e.g., fat column) and excluded them from certain plots.
+* Renamed columns or files when needed for clarity (e.g., removing “merged” from filenames).
+
+---
+
+#### How can you verify that your data is clean and ready to analyze?
+
+The following checks confirm readiness:
+
+* Used `.describe()` and `.info()` to confirm column data types and check for outliers or anomalies.
+* Ensured timestamps matched logical ranges (e.g., no future dates).
+* Confirmed row counts match expected entries (e.g., 24 hourly entries per day).
+* Cross-checked related datasets (e.g., steps per hour vs. daily steps).
+
+---
+
+#### Have you documented your cleaning process?
+
+Yes. All cleaning and transformation steps were documented within the Google Colab notebook using code comments and markdown cells. These records show which functions were used, the rationale behind cleaning choices, and any assumptions made during the process.
+
+---
+
+### Key Tasks
+
+| Task                    | Description                                                                                                            |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **1. Check for errors** | Used `.isnull()`, `.duplicated()`, `.info()`, and `.describe()` to find missing, duplicate, or malformed data.         |
+| **2. Choose tools**     | Selected Google Colab, Pandas, Seaborn, Plotly for cleaning, transformation, and visualization.                        |
+| **3. Transform data**   | Parsed datetime formats, extracted day/hour/minute for time series plots, grouped data to analyze daily/weekly trends. |
+| **4. Document process** | All steps are recorded in the Colab notebook with clear markdown headers and in-line comments.                         |
+
+---
+
+### Deliverable: Cleaning & Transformation Summary
+
+**Datasets used**:
+
+* daily\_activity.csv
+* heartrate\_seconds.csv
+* hourly\_calories.csv
+* hourly\_intensities.csv
+* hourly\_steps.csv
+* minute\_calories\_narrow\.csv
+* minute\_intensities\_narrow\.csv
+* minute\_METs\_narrow\.csv
+* minute\_sleep.csv
+* minute\_steps\_narrow\.csv
+* weight\_log\_info.csv
+
+**Cleaning actions performed**:
+
+* Converted date/time fields to datetime objects
+* Removed duplicate rows
+* Dropped unnecessary or empty columns
+* Excluded missing values in non-critical columns
+* Split datetime fields into components when needed for plots
+* Grouped/aggregated for analysis without altering original records
+
+---
+
 
 
 
