@@ -200,9 +200,9 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
 
 1. **Heart Rate by Hour**  
    ![Calorie per Minute](Visuals/heart_rate_per_hour.png)  
-   What it shows: A line graph displaying the average heart rate (in bpm) across different hours of the day (0-23).  
-   Key Insight: Heart rate is generally lower during typical sleep hours (0-5 AM), gradually increases during the morning and afternoon, peaks around 5 PM (17:00), and then slowly declines through the evening. The peak around 5 PM suggests that many users are most active or engaged in activities that elevate their heart rate during this time.  
-   Relevance for Bellabeat: This information can be used for targeted notifications. For example, promoting evening workouts or winding-down routines could be effective. It also provides insights into typical user rhythms, which can inform feature development related to activity tracking and recovery.    
+   **What it shows**: A line graph displaying the average heart rate (in bpm) across different hours of the day (0-23).  
+   **Key Insight**: Heart rate is generally lower during typical sleep hours (0-5 AM), gradually increases during the morning and afternoon, peaks around 5 PM (17:00), and then slowly declines through the evening. The peak around 5 PM suggests that many users are most active or engaged in activities that elevate their heart rate during this time.  
+   **Relevance for Bellabeat**: This information can be used for targeted notifications. For example, promoting evening workouts or winding-down routines could be effective. It also provides insights into typical user rhythms, which can inform feature development related to activity tracking and recovery.    
 
 3. **Manual vs Automatic Weight Reports**  
    ![Calorie per Minute](Visuals/manual_vs_automatic_weight_reports.png)  
