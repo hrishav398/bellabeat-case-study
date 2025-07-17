@@ -98,7 +98,6 @@ Despite these issues, the dataset is sufficient for **trend analysis and behavio
 
 ---
 
-![Average minutes by day of the week](Visuals/average_active_minutes_by_day_of_week.png)
 ## Process
 
 ### Guiding Questions
@@ -188,7 +187,6 @@ Yes. All cleaning and transformation steps were documented within the Google Col
 
 ---
 
-![Total Steps](Visuals/total_steps.png)
 
 ## Analyze
 
@@ -229,15 +227,16 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
    Users burned the most calories between **6–8 AM** and **5–7 PM**, consistent with common exercise windows.
 
 9. **Very Active Minutes by Day of Week (minute\_intensities\_narrow\.csv)**
+   ![Average minutes by day of the week](Visuals/average_active_minutes_by_day_of_week.png)
    Activity levels peaked on **Tuesdays, Thursdays, and Saturdays**, suggesting preferred workout days.
 
-10. **Calories Burned Over Time with Confidence Interval (hourly\_calories.csv)**
+11. **Calories Burned Over Time with Confidence Interval (hourly\_calories.csv)**
     There is an **overall increase in calories burned over time**, though variability grows later in the week, showing inconsistent effort.
 
-11. **Distribution of Total Steps (minute\_steps\_narrow\.csv)**
+12. **Distribution of Total Steps (minute\_steps\_narrow\.csv)**
     Most users logged **fewer than 10,000 steps per session**, suggesting room for improvement in daily movement.
 
-12. **Proportion of Activity Minutes (Pie Chart – minute\_intensities\_narrow\.csv)**
+13. **Proportion of Activity Minutes (Pie Chart – minute\_intensities\_narrow\.csv)**
 
 * **Sedentary**: \~70%
 * **Lightly Active**: \~20%
@@ -246,12 +245,13 @@ Using Fitbit user data, we analyzed trends in daily activity, heart rate, calori
   Users spend the majority of their time being sedentary.
 
 13. **Total Steps by Day of Week (minute\_steps\_narrow\.csv)**
+    ![Total Steps](Visuals/total_steps.png)
     Highest step counts were recorded on **Wednesdays and Saturdays**, indicating midweek and weekend activity boosts.
 
-14. **Steps vs Calories (daily\_activity.csv)**
+15. **Steps vs Calories (daily\_activity.csv)**
     A strong linear relationship was observed: **more steps directly translated to more calories burned**.
 
-15. **Weight Entry Method (Pie Chart – weight\_log\_info.csv)**
+16. **Weight Entry Method (Pie Chart – weight\_log\_info.csv)**
     \~87.5% of entries were **automatically recorded**, reinforcing that users prefer devices that passively track data with minimal effort.
 
 ---
