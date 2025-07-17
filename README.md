@@ -188,9 +188,8 @@ Yes. All cleaning and transformation steps were documented within the Google Col
 
 ---
 
-
-## Analyze
 ![Total Steps](Visuals/total_steps.png)
+## Analyze
 
 #### **Summary of Your Analysis**
 
