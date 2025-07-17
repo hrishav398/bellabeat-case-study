@@ -193,3 +193,78 @@ Yes. All cleaning and transformation steps were documented within the Google Col
 
 
 
+## Analyze
+
+#### **Summary of Your Analysis**
+
+The analysis of the Bellabeat smart device data revealed several key patterns in users’ behavior, especially around physical activity, calories burned, sleep, and weight tracking. The following is a summary of key insights derived from the eleven datasets used:
+
+---
+
+#### **Physical Activity Trends (daily\_activity, hourly\_steps, minute\_steps\_narrow):**
+
+* **Most users are relatively inactive.** The majority of users had low average daily step counts, suggesting they do not consistently reach the 10,000-step benchmark.
+* **Step activity is clustered around certain times of day.** Peak activity often occurred during morning and early evening hours, likely corresponding to commutes or workouts.
+* **Minute-level step data** showed that users were sedentary for large parts of the day, with short bursts of walking or running.
+
+---
+
+#### **Calories and METs (daily\_activity, hourly\_calories, minute\_calories\_narrow, minute\_METs\_narrow):**
+
+* **Calories burned correlates with step count** – more active users tend to burn more calories.
+* **MET (Metabolic Equivalent of Task)** levels are mostly low, suggesting light physical activities dominate.
+* Users rarely reach higher MET levels, meaning intense activity is rare.
+
+---
+
+#### **Sleep Behavior (minute\_sleep):**
+
+* Many users track sleep inconsistently (not all users have sleep data).
+* Users who do track sleep often average **6–7 hours**, which is slightly below the recommended 7–9 hours for adults.
+* **Interruptions in sleep** (e.g., frequent waking minutes) were found in several user profiles, indicating possible sleep quality issues.
+
+---
+
+#### **Heart Rate Insights (heartrate\_seconds):**
+
+* Most users fall within a **resting heart rate range of 60–80 bpm**, which is healthy.
+* Heart rate variability throughout the day aligns with expected patterns: lower during sleep, higher during activity.
+* Data is extremely granular (per second), so summary statistics like min, max, average heart rate per day were used.
+
+---
+
+#### **Weight Tracking (weight\_log\_info):**
+
+* Weight tracking is infrequent and only a small subset of users log weight regularly.
+* Among those who do, most users have **BMI values in the overweight category** (BMI 25–30), with very few in the obese or underweight range.
+* Many users who logged weight also recorded body fat %, allowing for more nuanced health insights.
+
+---
+
+#### **Minute-Level Intensity (minute\_intensities\_narrow):**
+
+* Data confirms that **sedentary minutes dominate**, followed by light activity.
+* **Very few entries show moderate or very active minutes**, reinforcing the idea of low physical engagement.
+
+---
+
+#### **Key Trends and Relationships Identified:**
+
+* **More active users** tend to:
+
+  * Burn more calories,
+  * Track sleep more consistently,
+  * Have more favorable weight/BMI profiles.
+* **Inactive or inconsistent users** provide gaps in data, particularly in weight and sleep tracking.
+* **Device usage patterns** suggest users are more likely to track steps than sleep or weight.
+
+---
+
+These findings help answer the business questions by shedding light on current **user behaviors**, **engagement levels**, and **health patterns**. This information will directly influence marketing strategies and feature development for Bellabeat's products and services.
+
+---
+
+
+
+
+
