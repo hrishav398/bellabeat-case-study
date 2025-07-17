@@ -36,7 +36,7 @@ The key business question is:
 * **Bellabeat Product & App Teams**, who can use insights to improve features, notifications, and user experience.
 
 ---
-![Average minutes by day of the week](Visuals/average active minutes by day of week.png)
+![Average minutes by day of the week](Visuals/average_active_minutes_by_day_of_week.png)
 
 ## PREPARE
 
